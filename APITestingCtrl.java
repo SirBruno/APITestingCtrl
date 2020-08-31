@@ -24,7 +24,7 @@ public class APITestingCtrl {
             for(Object r : results){
 
               // turn each result into a map (id=1,title="lorem ipsum", etc.)
-            	Map<String,Object> data = (Map<String,Object>)r;
+              Map<String,Object> data = (Map<String,Object>)r;
 
               // pass data into the map
               // first, the unique key, which is the "Id" returning from the request (id=1, id=2, etc.)
