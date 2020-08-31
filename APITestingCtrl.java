@@ -29,7 +29,7 @@ public class APITestingCtrl {
               // pass data into the map
               // first, the unique key, which is the "Id" returning from the request (id=1, id=2, etc.)
               // second, the value, which is the Object itself (id=1,title="lorem ipsum", etc.)
-				      dataMap.put(data.get('id'), r);
+	      dataMap.put(data.get('id'), r);
             }
             
             // return the map with all the data returned from the request
