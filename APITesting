@@ -1,0 +1,14 @@
+<apex:page controller="APITestingCtrl">
+    <apex:pageBlock>
+
+        <!-- "Key" here is the unique Key (i.e the Id returned in the response) -->
+        <!-- "Data" is the getter on the APITestingCtrl controller -->
+        <apex:pageBlockTable value="{!Data}" var="key">
+
+            <!-- Again, "Key" in this case, is the unique key on the map (id=1, id=2, etc.) -->
+            <apex:column value="{!Data[key].id}"/>
+            <apex:column value="{!Data[key].title}"/>
+            <apex:column value="{!Data[key].body}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
